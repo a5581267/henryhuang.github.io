@@ -1,42 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title></title>
-		<meta charset="utf-8">
-		<meta name="generator" content="Three.js Editor">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<style>
-			body {
-				font-family: sans-serif;
-				font-size: 13px;
-				background-color: #000;
-				margin: 0px;
-				overflow: hidden;
-			}
-		</style>
-	</head>
-	<body ontouchstart="">
-		<script src="js/three.min.js"></script>
-		<script src="js/app.js"></script>
-		
-		<script>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>[Babylon.js Viewer] Display a 3D model</title>
+  
 
-			var loader = new THREE.FileLoader();
-			loader.load( 'app.json', function ( text ) {
-
-				var player = new APP.Player();
-				player.load( JSON.parse( text ) );
-				player.setSize( window.innerWidth, window.innerHeight );
-				player.play();
-
-				document.body.appendChild( player.dom );
-
-				window.addEventListener( 'resize', function () {
-					player.setSize( window.innerWidth, window.innerHeight );
-				} );
-
-			} );
-
-		</script>
-	</body>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+  <title>Babylon.js Viewer - Display a 3D model</title>
+  <script src="babylon.viewer.js"></script> 
+</head>
+<body>
+    <babylon model="boombox.glb" templates.main.params.fill-screen="true"></babylon>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
 </html>
