@@ -418,9 +418,10 @@ a:hover {
   padding-left: 0;
 }
 
+/* 原本Navlink顏色 */
 .navbar-b.navbar-trans .nav-link,
 .navbar-b.navbar-reduce .nav-link {
-  color: #fff;
+  color: rgb(245, 245, 245);
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -473,23 +474,31 @@ a:hover {
   color: #fff;
 }
 
+/* Navbar 下滑 */
 .navbar-b.navbar-reduce {
-  transition: all .5s ease-in-out;
-  background-color: #fff;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  transition: all 0.5s ease-in-out;  /*變換時間*/
+  background-color: rgb(245, 245, 245);
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
+/* Navlink 滑到指定區域前 字顏色*/
 .navbar-b.navbar-reduce .nav-link {
   color: #0078ff;
 }
-
+/* Navlink 滑到指定區域時 線的顏色 */
 .navbar-b.navbar-reduce .nav-link:before {
   background-color: #0078ff;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
   color: #0078ff;
+}
+
+.navbar-b.navbar-reduce .logo{
+  -webkit-filter: drop-shadow(0px 1px 1px black);
+  filter:drop-shadow(0px 1px 1px black) 
+
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
