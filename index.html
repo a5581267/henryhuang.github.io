@@ -63,12 +63,13 @@
               <a id="dropdown-menu" class="nav-link  dropdown-toggle js-scroll" href="#work" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Project
               </a>
+              <a id = "link" class="nav-link js-scroll" href="#work">Project</a>
               <script>
               // Check whether mobile or not
               if( screen.width <= 480 ) 
-              {
-                document.getElementById("dropdown-menu").href = ""; 
-              } 
+                document.getElementById("dropdown-menu").style.display = "none"; 
+              else
+                document.getElementById("link").style.display = "none"; 
               </script>
               <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="#">CubeSat Research</a>
