@@ -199,6 +199,40 @@ a:hover {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* Carousel */
+.carousel-control-next,
+.carousel-control-prev 
+{
+    filter: invert(100%);
+}
+.carousel-caption-title,
+.carousel-caption-subtitle
+{
+  color: #ffffff;
+  text-shadow: rgb(46, 46, 46) 1px 3px 4px;
+  font-size: 1.7rem;
+}
+
+
+.carousel-indicators .active{
+  background-color: #016fff;
+  -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.75);
+}
+
+.carousel-indicators li {
+  background-color: #ffffff;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  -webkit-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.75);
+}
+
+
+
 /*------/ Socials /------*/
 
 .socials {
