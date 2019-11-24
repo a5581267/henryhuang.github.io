@@ -94,10 +94,9 @@
   <div class="intro-content display-table">
     <div class="table-cell">
       <div class="container">
-        <!--<p class="display-6 color-d">Hello, world!</p>-->
         <h1 class="intro-title mb-4">CubeSat Research</h1>
         <p class="intro-subtitle" style="font-size: 2.5rem;">Development & Analysis</p>
-        <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+
       </div>
     </div>
   </div>
@@ -105,8 +104,9 @@
 
 <section class="about-mf sect-pt4 route">
     <div class="container">
-    <div class="box-shadow-full">
 
+      <div class="box-shadow-full">
+  
         <div class="row">
           <div class="col-lg-6"> <img class="img-fluid d-block float-right py-5" src="asset/image/CubeSat Research/Principal.JPG" width="60%"> </div>
           <div class="px-lg-5 d-flex flex-column col-lg-6 justify-content-center flex-grow-0">
@@ -117,7 +117,7 @@
                 </div>     
             <p class="lead mr-auto mb-3" style="text-align: justify">CubeSat (U-class spacecraft) is a type of small satellite for space research that is made up of multiples of 10 cm × 10 cm × 11.35 cm cubic units.</p>
             <div class="row">
-              <div class="col-md-12 text-center"><a class="btn btn-info" href="https://en.wikipedia.org/wiki/CubeSat" style="width: 35%; font-size: 20px;" target="_blank">More Info</a></div>
+              <div class="col-md-12 text-center"><a class="btn btn-outline-info" href="https://en.wikipedia.org/wiki/CubeSat" style="width: 35%; font-size: 20px;" target="_blank">More Info</a></div>
             </div>
           </div>
         </div>
@@ -236,6 +236,7 @@
                         </div>     
                     <p class="lead mr-auto mb-3 s-description" style="text-align: justify">
                     In our CubeSat project, ISIS Onboard Computer (iOBC) is used as OBC to develop FSW and communicate with other subsystems and payloads.
+                    <div class="text-center"><a class="btn btn-outline-info" href="https://www.isispace.nl/product/on-board-computer/" style="width: 35%; font-size: 20px;" target="_blank">ISIS Official</a></div>
                     </p>
                   </div>
 
@@ -252,7 +253,7 @@
                     </p>
                     <p class="lead mr-auto mb-3 s-description" style="text-align: justify">To achieve different functions, RTOS-tasks are designed by developer and controlled by FreeRTOS-scheduler.
                     </p>
-                  
+                    <div class="text-center"><a class="btn btn-outline-info" href="https://www.freertos.org/" style="width: 35%; font-size: 20px;" target="_blank">FreeRTOS.org</a></div>
                   </div>
                   
 
@@ -272,19 +273,23 @@
                   Development Environment
                 </h3>
                 <p class="subtitle-a" style="font-size: 1.5rem">
-                 Hardware & Software
+                 Start for CubeSat builder
                 </p>
                 <div class="line-mf"></div>
               </div>
           </div>
 
      <div class="box-shadow-full">
+ 
+
+      <p style="text-align: center; font-weight: bold" class="lead mr-auto mb-3 s-description"><span class="fa fa-arrow-down" aria-hidden="true"></span>Feature of ISIS iOBC</p>
+      
       <div class="col-md-6 p-3" style=" margin: auto">
           <table class="table table-hover table-striped table-bordered">
             <thead class="thead-inverse">
-              <tr>
-                <th scope="col">Hardware</th>
-                <th scope="col">Description</th>
+              <tr class="table-header">
+                <th>Hardware</th>
+                <th>Description</th>
               </tr>
             </thead>
             <tbody>
@@ -306,30 +311,65 @@
               <tr>
                 <th scope="row">Mass storage</th>
                 <td>
-                <li>2x SD card slots</li>
-                <li>256 KB FRAM</li> 
+                2xSD card slots, FRAM</li> 
                 </td> 
               </tr>
-
               <tr>
                     <th scope="row">Bus</th>
                     <td>104-pin CSKB</td>
               </tr>
-
               <tr>
                   <th scope="row">Interface</th>
                   <td>
-                  <li>1x I2C</li>
-                  <li>1x SPI</li> 
-                  <li>2x UARTS</li> 
-                  <li>GPIO pins</li> 
-                  <li>PWM output</li> 
+                    I2C, SPI, UARTS, GPIO, PWM        
                 </td>
               </tr> 
             
             </tbody>
           </table>
           </div>
+          
+          <p style="text-align: center; font-weight: bold" class="lead mr-auto mb-3 s-description"><span class="fa fa-arrow-down" aria-hidden="true"></span>Development Environment of ISIS iOBC</p>
+          <div class="col-md-6 p-3" style=" margin: auto">
+              <table class="table table-hover table-striped table-bordered">
+                <thead class="thead-inverse">
+                  <tr class="table-header">
+                    <th>PC Config</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Operating System</th>
+                    <td>Windows10, 64bits</td>
+                  </tr>
+    
+                  <tr>
+                    <th scope="row">Coding Language</th>
+                    <td>C in C99 standard</td>
+                  </tr>
+    
+                  <tr>
+                    <th scope="row">Compiler</th>
+                    <td>GCC</td>
+                  </tr>
+    
+                  <tr>
+                    <th scope="row">IDE</th>
+                    <td>
+                    Eclipse CDT (Kepler)</li> 
+                    </td> 
+                  </tr>
+                  <tr>
+                        <th scope="row">On-chip debugger</th>
+                        <td>JTAG</td>
+                  </tr> 
+                
+                </tbody>
+              </table>
+              </div>
+
+
           </div>
         </div>
         

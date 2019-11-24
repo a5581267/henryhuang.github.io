@@ -232,10 +232,24 @@ a:hover {
 }
 
 /* table */
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: #53a3ff;
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover{
+  background-color: #334a68;
   color: #fcfcfc;
 }
+
+.table-header {
+  background-color: rgb(34, 34, 34);
+  color: #fcfcfc;
+}
+
+/* icon */
+.fa,.fa-arrow-down
+{
+  text-align: center; 
+  display: inline-block;
+  font-size: 1.2em;
+}
+
 /*------/ Socials /------*/
 
 .socials {
